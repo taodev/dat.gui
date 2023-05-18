@@ -55,6 +55,9 @@ $input-color: lighten($background-color, 8.5%);
   font: 11px 'Lucida Grande', sans-serif;
   text-shadow: 0 -1px 0 #111;
 
+  // added by taodev
+  z-index: 9999;
+
   /** Auto place */
   &.main {
 
@@ -75,7 +78,8 @@ $input-color: lighten($background-color, 8.5%);
   }
 
   li {
-
+    display: block;
+    
     &:not(.folder) {
       background: $background-color;
       border-bottom: 1px solid $border-color;
