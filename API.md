@@ -299,7 +299,7 @@ An "abstract" class that represents a given property of an object.
     * [.setValue(newValue)](#Controller+setValue)
     * [.getValue()](#Controller+getValue) ⇒ <code>Object</code>
     * [.updateDisplay()](#Controller+updateDisplay) ⇒ [<code>Controller</code>](#Controller)
-    * [.isModified()](#Controller+isModified) ⇒ <code>Boolean</code>
+    * [.isModified()](#Controller+isModified) ⇒ <code>boolean</code>
 
 <a name="new_Controller_new"></a>
 
@@ -415,9 +415,9 @@ with the object's current value.
 **Returns**: [<code>Controller</code>](#Controller) - this  
 <a name="Controller+isModified"></a>
 
-### controller.isModified() ⇒ <code>Boolean</code>
+### controller.isModified() ⇒ <code>boolean</code>
 **Kind**: instance method of [<code>Controller</code>](#Controller)  
-**Returns**: <code>Boolean</code> - true if the value has deviated from initialValue  
+**Returns**: <code>boolean</code> - true if the value has deviated from initialValue  
 <a name="NumberController"></a>
 
 ## NumberController ⇐ <code>dat.controllers.Controller</code>

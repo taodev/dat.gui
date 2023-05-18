@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dataarts/dat.gui.git"
+    "url": "git+ssh://github.com/taodev/dat.gui.git"
   },
   "author": "Data Arts Team, Google",
   "license": "Apache-2.0",

@@ -525,6 +525,24 @@ common.extend(
       );
     },
 
+    // added by taodev
+    addAuto: function(object) {
+      var group = {};
+      for(let i in object) {
+        let controller = add(
+          this,
+          object,
+          i,
+          {
+            factoryArgs: null
+          }
+        );
+        group[i] = controller;
+      }
+
+      return group;
+    },
+
     /**
      * Adds a new color controller to the GUI.
      *
