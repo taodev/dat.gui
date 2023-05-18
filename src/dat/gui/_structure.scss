@@ -21,7 +21,7 @@ $button-height: 20px;
     left: 0;
     right: 0;
     height: 0;
-    z-index: 0;
+    z-index: 9999;
   }
 
   &:not(.ac) .main {
