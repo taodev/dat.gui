@@ -1941,7 +1941,7 @@ Common.extend(GUI.prototype,
     });
   },
   addAuto: function addAuto(object) {
-    var group = {};
+    var group = new Map();
     for (var i in object) {
       var controller = _add(this, object, i, {
         factoryArgs: null

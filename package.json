@@ -4,6 +4,7 @@
   "description": "A lightweight graphical user interface for changing variables in JavaScript.",
   "main": "build/dat.gui.js",
   "module": "build/dat.gui.module.js",
+  "types": "build/dat.gui.d.ts",
   "directories": {
     "test": "tests"
   },

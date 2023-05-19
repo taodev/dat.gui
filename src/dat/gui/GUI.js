@@ -527,7 +527,7 @@ common.extend(
 
     // added by taodev
     addAuto: function(object) {
-      var group = {};
+      var group = new Map();
       for(let i in object) {
         let controller = add(
           this,
