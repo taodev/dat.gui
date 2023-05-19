@@ -526,21 +526,19 @@ common.extend(
     },
 
     // added by taodev
-    addAuto: function(object) {
-      var group = new Map();
+    addAuto: function(object, echoFn) {
       for(let i in object) {
-        let controller = add(
+        let c = add(
           this,
           object,
           i,
-          {
-            factoryArgs: null
-          }
+          {}
         );
-        group[i] = controller;
-      }
 
-      return group;
+        if(echoFn) {
+          echoFn(i, c);
+        }
+      }
     },
 
     /**

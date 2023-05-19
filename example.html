@@ -51,7 +51,6 @@
     f1.addColor(obj, 'color1');
     f1.addColor(obj, 'color2');
     f1.addColor(obj, 'color3');
-    f1.addEx(obj, 'message', '颜色3');
 
     var f2 = gui.addFolder('Another Folder');
     f2.add(obj, 'noiseStrength');
@@ -84,10 +83,10 @@
       数量: 323,
     }
     
-    let controllers = f2.addAuto(propsDesc);
-    console.log(controllers);
-    controllers.数量.listen();
-    propsDesc.数量 = 300;
+    let controllers = f2.addAuto(propsDesc, function(name, controller) {
+      console.log(name);
+      controller.listen();
+    });
 
   </script>
 </body>
