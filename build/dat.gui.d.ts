@@ -79,7 +79,7 @@ export class GUI {
 
     addColor(target: Object, propName: string): GUIController;
 
-    addAuto(target: Object): Map<string, GUIController>;
+    addAuto(target: Object, eachFn: (name: string, controller: GUIController) => void): void;
 
     remove(controller: GUIController): void;
     destroy(): void;
