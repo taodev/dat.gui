@@ -1940,15 +1940,13 @@ Common.extend(GUI.prototype,
       factoryArgs: Array.prototype.slice.call(arguments, 2)
     });
   },
-  addAuto: function addAuto(object) {
-    var group = new Map();
+  addAuto: function addAuto(object, echoFn) {
     for (var i in object) {
-      var controller = _add(this, object, i, {
-        factoryArgs: null
-      });
-      group[i] = controller;
+      var c = _add(this, object, i, {});
+      if (echoFn) {
+        echoFn(i, c);
+      }
     }
-    return group;
   },
   addColor: function addColor(object, property) {
     return _add(this, object, property, {
